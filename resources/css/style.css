@@ -7,13 +7,15 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   background-color: #fff;
   color: #555;
   font-family: Lato, Arial, sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 .clearfix {
@@ -146,6 +148,15 @@ h2::after {
   margin-top: 20px;
 }
 
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+}
+
+/**** Main navi ****/
 .main-nav {
   float: right;
   list-style: none;
@@ -172,6 +183,35 @@ h2::after {
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
   transition: border 0.5s;
+}
+
+/*** Sticky navigation *****/
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+
+.sticky .main-nav {
+  margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 15px 0;
+  color: #555;
+}
+
+.sticky .logo {
+  display: none;
+}
+
+.sticky .logo-black {
+  display: block;
 }
 
 /****** LINKS *******/
