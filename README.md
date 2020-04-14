@@ -15,3 +15,6 @@
 </ul>
 
 <p>Deployed app can be found <a href="https://omnifood-luis-arguijo.herokuapp.com/">here</a></p>
+
+<h3> Flexbox </h3>
+<p>Flexbox was also used practiced. Go to the <a href="https://codepen.io/larguijo/pen/pojjOaX?editors=1100">Code Pen</a> project.</p>
